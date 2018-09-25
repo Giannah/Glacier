@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<!-- Le titre qui apparaît sur l'onglet de la fenêtre du navigateur -->
+	<title>Les délices glacés d'Elsa</title>
+
+<!-- Les meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Les polices -->
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Marck+Script|Parisienne" rel="stylesheet">
+<!-- Les feuilles de style externe -->
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	
+<!-- Les feuilles de style propres à la page -->
+	<link rel="stylesheet" href="./css/style.css">
+
+<!-- Le carrousel -->
+	<script src="./js/utilities.js"></script>
+	<script src="./js/slider.js"></script>
+</head>
+
+<!-- La partie principale de ma page... -->
+<body>
+
+<!-- Le header de mon site vitrine qui sera commun à toutes les pages -->
+	<header>
+
+		<section id="socialBanner">
+
+			<ul class="socialnetwork">
+				<li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+			</ul>
+			<ul class="press">
+				<li><a href="#"><i class="fas fa-handshake"></i></a></li>
+				<li><a href="#"><i class="fas fa-newspaper"></i></a></li>
+			</ul>
+		</section>
+
+		<a href="index.php"><h1>Les délices glacés d'Elsa</h1></a>
+
+			<nav id= "navbar">
+
+				<ul id="menu">
+					<li>Mes réalisations</li>
+						<ul id="realisations">
+							<a href=""><li>Les glaces</li></a>
+							<a href=""><li>Les sorbets</li></a>
+							<a href=""><li>Les gauffres</li></a>
+						</ul>
+					<li>A propos de moi</li>
+					<li>Me contacter</li>
+					<li>Mes inspirations</li>
+				</ul>
+			</nav>
+
+	</header>
+
+<!-- La partie principale qui affiche le contenu et qui change en fonction de la page -->
+	<main>
+
+		<section id="presentation">
+
+			<h2>Bienvenue à toi jeune gourmand(e) !</h2>
+
+			<?php include $template.'.phtml'; ?>
+
+		</section>
+
+			
+	</main>
+
+<!-- Le footer, commun à toutes les pages -->
+	<footer class="footer">
+
+		<small><a href="index.php">Les délices glacés d'Elsa</a> - <strong>Tous droits réservés</strong></small>
+		
+	</footer>
+</body>
+</html>

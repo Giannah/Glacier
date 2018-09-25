@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<section>
+		<article>
+			<?php foreach ($showCreations as $creation) : ?>
+			<h3>
+				<a href="show_description.php?id=<?= intval ($creation['Id'])?>" title="Coup d'oeil sur la création">
+				 <?= htmlspecialchars($creation['Name'])?>
+				 </a>
+			</h3>
+
+			<img src="images/glaces/<?=htmlspecialchars($creation['Photo']) ?>" alt="<?=htmlspecialchars($creation['Name']) ?>">
+
+			<p><?=htmlspecialchars($creation['Description'])?></p>
+			<p><?= htmlspecialchars($creation['Anecdote']) ?> &nbsp; 
+			</p>
+
+		<?php endforeach; ?>	
+		</article>
+	</section>
+</body>
+</html>
