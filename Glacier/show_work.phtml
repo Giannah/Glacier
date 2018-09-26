@@ -4,8 +4,8 @@
 	<title></title>
 </head>
 <body>
-	<section>
-		<article>
+	<section id="container">
+		<article class="glace">
 			<?php foreach ($showCreations as $creation) : ?>
 			<h3>
 				<a href="show_description.php?id=<?= intval ($creation['Id'])?>" title="Coup d'oeil sur la création">
@@ -13,10 +13,11 @@
 				 </a>
 			</h3>
 
-			<img src="images/glaces/<?=htmlspecialchars($creation['Photo']) ?>" alt="<?=htmlspecialchars($creation['Name']) ?>">
+			<img src="images/glaces/<?= ($creation['Photo']) ?>" alt="<?=htmlspecialchars($creation['Name']) ?>">
 
 			<p><?=htmlspecialchars($creation['Description'])?></p>
-			<p><?= htmlspecialchars($creation['Anecdote']) ?> &nbsp; 
+
+			<p><span>Bon à savoir : </span><?= htmlspecialchars($creation['Anecdote']) ?> &nbsp; 
 			</p>
 
 		<?php endforeach; ?>	

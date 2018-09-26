@@ -8,6 +8,7 @@ $query = $pdo->prepare
 		Id,
 		Name,
 		Description,
+		Photo,
 		Anecdote
 	FROM Creations'
 );
