@@ -5,23 +5,24 @@
 </head>
 <body>
 	<section id="container">
-		<article class="glace">
-			<?php foreach ($showCreations as $creation) : ?>
-			<h3>
-				<a href="show_description.php?id=<?= intval ($creation['Id'])?>" title="Coup d'oeil sur la création">
-				 <?= htmlspecialchars($creation['Name'])?>
-				 </a>
-			</h3>
+		
+		<?php foreach ($showCreations as $creation) : ?>
+			<article class="glace">
+				<h3>
+					 <?= htmlspecialchars($creation['Name'])?>
+				</h3>
 
-			<img src="images/glaces/<?= ($creation['Photo']) ?>" alt="<?=htmlspecialchars($creation['Name']) ?>">
+				<img src="images/glaces/<?= ($creation['Photo']) ?>" alt="<?=htmlspecialchars($creation['Name']) ?>">
 
-			<p><?=htmlspecialchars($creation['Description'])?></p>
+				<p><?=htmlspecialchars($creation['Description'])?></p>
 
-			<p><span>Bon à savoir : </span><?= htmlspecialchars($creation['Anecdote']) ?> &nbsp; 
-			</p>
+				<p><span>Bon à savoir : </span><?= htmlspecialchars($creation['Anecdote']) ?> &nbsp; 
+				</p>
 
+				<a href="show_description.php?id=<?= intval ($creation['Id'])?>" title="Coup d'oeil sur la création"><i class="fas fa-plus-circle"></i></a>
+				
+			</article>
 		<?php endforeach; ?>	
-		</article>
 	</section>
 </body>
 </html>
