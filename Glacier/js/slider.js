@@ -20,8 +20,13 @@ var slides =
     { image: 'images/glaces/maracudja.jpg', legend: 'Maracudja gotcha'       },
     { image: 'images/glaces/framboise.jpg', legend: 'Raspberry intoxication' },
     { image: 'images/glaces/pistache.jpg', legend: 'Pistachio adagio' },
-    { image: 'images/glaces/cacahuète.jpg', legend: 'Peanut temptation' }
-
+    { image: 'images/glaces/cacahuète.jpg', legend: 'Peanut temptation' },
+    { image: 'images/sorbets/ananas.jpg', legend: 'Pineapple bliss' },
+    { image: 'images/sorbets/banane.jpg', legend: 'Banana mania' },
+    { image: 'images/sorbets/pastèque.jpg', legend: 'Watermelon gallon' },
+    { image: 'images/sorbets/melon.png', legend: 'Melon felon' },
+    { image: 'images/sorbets/kiwi.jpg', legend: 'Kiwi ouistiti' },
+    { image: 'images/sorbets/pitaya.jpg', legend: 'Pitaya gangsta' }
 ];
 
 // Objet contenant l'éat du carrousel

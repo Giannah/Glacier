@@ -4,13 +4,17 @@
 	<title></title>
 </head>
 <body>
-	<section id="container">
+
+	<h3>Les glaces</h3>
+<hr>
+
+	<section class="container">
 		
 		<?php foreach ($showCreations as $creation) : ?>
 			<article class="glace">
-				<h3>
+				<h4>
 					 <?= htmlspecialchars($creation['Name'])?>
-				</h3>
+				</h4>
 
 				<img src="images/glaces/<?= ($creation['Photo']) ?>" alt="<?=htmlspecialchars($creation['Name']) ?>">
 
@@ -23,6 +27,32 @@
 				
 			</article>
 		<?php endforeach; ?>	
+
+	</section>
+
+	<h3>Les sorbets</h3>
+<hr>
+
+	<section class="container">
+		
+		<?php foreach ($showSorbets as $sorbet) : ?>
+			<article class="glace">
+				<h4>
+					 <?= htmlspecialchars($sorbet['Name'])?>
+				</h4>
+
+				<img src="images/sorbets/<?= ($sorbet['Photo']) ?>" alt="<?=htmlspecialchars($sorbet['Name']) ?>">
+
+				<p><?=htmlspecialchars($sorbet['Description'])?></p>
+
+				<p><span>Bon à savoir : </span><?= htmlspecialchars($sorbet['Anecdote']) ?> &nbsp; 
+				</p>
+
+				<a href="show_description.php?id=<?= intval ($sorbet['Id'])?>" title="Coup d'oeil sur la création"><i class="fas fa-plus-circle"></i></a>
+				
+			</article>
+		<?php endforeach; ?>	
+
 	</section>
 </body>
 </html>

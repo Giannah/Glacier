@@ -18,8 +18,9 @@ html {
 	font-size: 62.5%;
 }
 
-a {
+a:link, a:visited, a:link:active, a:visited:active {
 	text-decoration: none;
+	color: #669999;
 }
 
 ul{
@@ -38,6 +39,20 @@ h1 {
 
 h2 {
 	font-size: 4rem;
+}
+
+.image {
+	width: 200px;
+	height: 200px;
+	border: 3px dotted #669999;
+	border-radius: 50%;
+}
+
+hr { 
+	width:30%;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #669999;
 }
 
 /**** HEADER ****/
@@ -144,7 +159,7 @@ main {
 	text-align: center;
 }
 
-#container {
+.container {
 	font-family: 'Marck Script', cursive; 
 	display: flex;
 	flex-flow: row wrap;
@@ -248,7 +263,7 @@ footer {
 	background-position: 20% 70%;
 }
 
-small>a {
+.footer a {
 	font-family: 'Cookie', cursive;
 	color: #ffffff;
 }

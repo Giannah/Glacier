@@ -36,6 +36,3 @@ INSERT INTO `Creations` (`Id`, `Name`, `Description`, `Photo`, `Anecdote`) VALUE
 (7, 'Pistachio adagio', 'Got to get in the tempo!', 'pistache.jpg', 'On pense qu\'il y a 9000 ans, au Moyen-Orient, la pistache était déjà consommée et appréciée. Il s\'agissait probablement de fruits sauvages. Le pistachier aurait ensuite été cultivé il y a 4000 ans, en Assyrie, au nord de la Mésopotamie.'),
 (8, 'Peanut temptation', 'Well, you know what they say about temptation...', 'cacahuète.jpg', 'La cacahuète a été découverte lors de la conquête du Nouveau Monde et rapportée en Europe par les conquistadors espagnols.');
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

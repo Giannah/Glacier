@@ -1,7 +1,7 @@
 <?php
 
 
-$template='index';
+$template='show_me';
 
 include 'layout.phtml';
 ?>
