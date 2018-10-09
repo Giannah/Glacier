@@ -1,5 +1,4 @@
 <?php
-
 include 'php/bdd_connection.php';
 
 $query = $pdo->prepare 
@@ -10,16 +9,15 @@ $query = $pdo->prepare
 		Description,
 		Photo,
 		Anecdote
-	FROM Creations'
+	FROM Sorbets'
 );
 
 $query ->execute();
 
-$showCreations = $query->fetchAll(PDO::FETCH_ASSOC);
+$showSorbets = $query->fetchAll(PDO::FETCH_ASSOC);
 
-$template='show_work';
+$template='show_work2';
 
-include 'layout.phtml';
-
+include 'layout.phtml'
 
 ?>

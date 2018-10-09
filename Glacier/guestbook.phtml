@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+		<form class="contact-form" action="guestbook.php" method="POST">
+			
+			<fieldset>
+				<legend><i class="fas fa-pen-fancy"></i> Par ici les mots d'amour !!! <i class="far fa-heart"></i></legend>
+
+				<ul>
+					<li>
+						<label for="pseudonym">Ton petit nom :</label>
+						<input type="text" name="pseudonym" id="pseudonym" autofocus>
+					</li>
+					<li>
+						<label for="message">Ton message:</label>
+						<textarea name="message" id="message" rows="8"></textarea>
+					</li>
+					<li>
+						<button type="submit" name="submit">Donner le love !</button>
+						<a href="index.php" class="cancel">Annuler</a>
+					</li>
+				</ul>
+
+			</fieldset>
+		</form>
+
+	<hr>
+
+		<h3>Ils m'ont déclaré leur flamme :</h3>
+
+		<ul>
+			<?php	foreach($comments as $comment): ?>
+				<li>
+					<h4><i class="far fa-comment"></i> <?= htmlspecialchars($comment['Pseudo']) ?> :</h4>
+					<article><?= htmlspecialchars($comment['Message']) ?></article>
+				</li>
+			<?php endforeach; ?>
+
+		</ul>
+
+</body>
+</html>

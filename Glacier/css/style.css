@@ -20,7 +20,6 @@ html {
 
 a:link, a:visited, a:link:active, a:visited:active {
 	text-decoration: none;
-	color: #669999;
 }
 
 ul{
@@ -53,6 +52,8 @@ hr {
     border-style: dashed;
     border-width: 3px;
     border-color: #669999;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /**** HEADER ****/
@@ -130,7 +131,7 @@ header {
 	align-items: flex-end;
 }
 
-#menu li {
+#menu li a {
 	color: rgb(102, 153, 153);
 }
 
@@ -196,6 +197,80 @@ main {
 	color: #669999;
 }
 
+.contact li a i{
+	display: inline-block;
+}
+
+#social a i {
+	color: #669999;
+}
+
+/**** FORMULAIRE ****/
+
+fieldset {
+	border: 3px solid #669999;
+	border-radius: 10px;
+	width: 60%;
+	margin: 2rem auto;
+	text-align: left;
+}
+
+
+legend {
+	text-align: center;
+	color: #669999;
+	padding: 0.5rem;
+	font-weight: bold;
+}
+
+input {
+	font-family: 'Marck Script', cursive;
+	font-size: 2rem;
+	width: 50%;
+	margin-left: 2rem;
+	background-color: transparent;
+	border:	none;
+	border-bottom: 1px solid;
+}
+
+textarea {
+	font-family: 'Marck Script', cursive;
+	font-size: 2rem;
+	width: 80%;
+	margin-top: 1rem;
+	background-color: transparent;
+	border-radius: 8px;
+}
+
+label {
+	color: #669999;
+	vertical-align: top;
+}
+
+button[type="submit"] {
+	color: white;
+	background-color: #669999;
+	border-radius: 5px;
+	border: 1px solid #669999;
+	padding: 10px;
+	font-family: 'Marck Script', cursive;
+	font-size: 2rem;
+}
+
+.cancel {
+	color: white;
+	background-color: red;
+	border-radius: 5px;
+	border: 1px solid red;
+	padding: 10px;
+	font-family: 'Marck Script', cursive;
+	font-size: 2rem;
+}
+
+.message {
+	font-family: 'Parisienne', cursive;
+	font-size: 2rem;
+}
 
 /**** CARROUSEL ****/
 
